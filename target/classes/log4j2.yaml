@@ -1,0 +1,71 @@
+Configutation:
+  name: Default
+
+  Properties:
+    Property:
+      - name: log-path
+        value: "logs"
+
+  Appenders:
+    Console:
+      name: Console_Appender
+      target: SYSTEM_OUT
+      PatternLayout:
+        pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+
+    RollingFile:
+      - name: RollingFile_Appender
+        fileName: ${log-path}/rollingfile.log
+        filePattern: "logs/archive/rollingfile.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
+        PatternLayout:
+          pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+        Policies:
+          SizeBasedTriggeringPolicy:
+            size: 100 KB
+        DefaultRollOverStrategy:
+          max: 100
+      - name: RollingFile_Appender_Student
+        fileName: ${log-path}/rollingfilestudent.log
+        filePattern: "logs/archive/rollingfile.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
+        PatternLayout:
+          pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+        Policies:
+          SizeBasedTriggeringPolicy:
+            size: 100 KB
+        DefaultRollOverStrategy:
+          max: 100
+      - name: RollingFile_Appender_University
+        fileName: ${log-path}/rollingfileuniversity.log
+        filePattern: "logs/archive/rollingfile.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
+        PatternLayout:
+          pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+        Policies:
+          SizeBasedTriggeringPolicy:
+            size: 100 KB
+        DefaultRollOverStrategy:
+          max: 100
+
+
+
+
+  Loggers:
+    Root:
+      level: debug
+     # AppenderRef:
+     # - ref: Console_Appender
+     # - ref: RollingFile_Appender
+    Logger:
+    - name: app.Student
+      level: debug
+      AppenderRef:
+        - ref: Console_Appender
+        - ref: RollingFile_Appender_Student
+    - name: app.University
+      level: error
+      AppenderRef:
+        - ref: Console_Appender
+        - ref: RollingFile_Appender_University
+    - name: app.Main
+      level: debug
+      AppenderRef:
+        - ref: Console_Appender
