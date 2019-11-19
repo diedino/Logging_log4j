@@ -26,7 +26,7 @@ Configutation:
           max: 100
       - name: RollingFile_Appender_Student
         fileName: ${log-path}/rollingfilestudent.log
-        filePattern: "logs/archive/rollingfile.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
+        filePattern: "logs/archive/student.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
         PatternLayout:
           pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
         Policies:
@@ -36,7 +36,7 @@ Configutation:
           max: 100
       - name: RollingFile_Appender_University
         fileName: ${log-path}/rollingfileuniversity.log
-        filePattern: "logs/archive/rollingfile.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
+        filePattern: "logs/archive/university.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
         PatternLayout:
           pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
         Policies:
@@ -46,7 +46,7 @@ Configutation:
           max: 100
       - name: RollingFile_Appender_LogPack
         fileName: ${log-path}/rollingfilelogpack.log
-        filePattern: "logs/archive/rollingfile.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
+        filePattern: "logs/archive/logpack.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
         PatternLayout:
           pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
         Policies:
@@ -71,7 +71,7 @@ Configutation:
         - ref: Console_Appender
         - ref: RollingFile_Appender_Student
     - name: app.University
-      level: error
+      level: debug
       AppenderRef:
         - ref: Console_Appender
         - ref: RollingFile_Appender_University
