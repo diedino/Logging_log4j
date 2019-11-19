@@ -42,3 +42,19 @@ All about appenders:
 https://logging.apache.org/log4j/log4j-2.0/manual/appenders.html
 
       additivity: false - if one appender print something to console then another won't do that
+
+
+
+#regex filter
+#        RegexFilter:
+#          regex: "qwert .*"
+#          onMatch: "ACCEPT"
+#          onMismatch: "DENY"
+
+
+logger.error(MarkerManager.getMarker("FLOW"), "error with marker \"flow\" from university");
+#marker filter
+#        MarkerFilter:
+#          marker: "FLOW"
+#          onMatch: "ACCEPT"
+#          onMismatch: "DENY"

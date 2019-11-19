@@ -26,10 +26,10 @@ Configutation:
           max: 100
       - name: RollingFile_Appender_Student
 #regex filter
-        RegexFilter:
-          regex: "qwert .*"
-          onMatch: "ACCEPT"
-          onMismatch: "DENY"
+#        RegexFilter:
+#          regex: "qwert .*"
+#          onMatch: "ACCEPT"
+#          onMismatch: "DENY"
         fileName: ${log-path}/rollingfilestudent.log
         filePattern: "logs/archive/student.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
         PatternLayout:
