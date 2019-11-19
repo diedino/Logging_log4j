@@ -15,13 +15,14 @@ public class Main {
         logger.error("error from main");
         Student student = new Student();
         University university = new University();
-        for (int i=0; i<10000; i++) {
+        //for (int i=0; i<1000; i++) {
             student.doSomething();
             university.doSomething();
-        }
+      //  }
         LogPack1 logPack1 = new LogPack1();
         LogPack2 logPack2 = new LogPack2();
         logPack1.doSmth();
         logPack2.doSmth();
+        logger.warn("one = {}", 1);
     }
 }

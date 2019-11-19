@@ -61,17 +61,19 @@ Configutation:
   Loggers:
     Root:
       level: debug
-     # AppenderRef:
-     # - ref: Console_Appender
-     # - ref: RollingFile_Appender
+      AppenderRef:
+       - ref: Console_Appender
+       - ref: RollingFile_Appender
     Logger:
     - name: app.Student
       level: debug
+      additivity: false
       AppenderRef:
         - ref: Console_Appender
         - ref: RollingFile_Appender_Student
     - name: app.University
       level: debug
+      additivity: false
       AppenderRef:
         - ref: Console_Appender
         - ref: RollingFile_Appender_University
@@ -82,5 +84,6 @@ Configutation:
 #logging for package
     - name: loggingpackage
       level: debug
+      additivity: false
       AppenderRef:
         - ref: RollingFile_Appender_LogPack

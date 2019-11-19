@@ -1,0 +1,44 @@
+
+Something about why we need to use slf4j over log4j:
+https://javarevisited.blogspot.com/2013/08/why-use-sl4j-over-log4j-for-logging-in.html
+
+Comparing Java logging frameworks:
+https://stackify.com/compare-java-logging-frameworks/
+
+Logback guide:
+https://www.baeldung.com/logback
+
+Logback configuration(documentation):
+http://logback.qos.ch/manual/configuration.html.
+
+Logback configuration example:
+https://www.mkyong.com/logging/logback-xml-example/
+
+While working with SLF4J, you need to provide the following three components (read jars):
+SLF4J API (slf4j-api.jar) – This lets you make logging calls to SLF4J’s org.slf4j.Logger in your code (and not a specific logging implementation thus introducing logging abstraction in your code).
+SLF4J Binding – This is either slf4j-log4j12.jar (for log4j logging), slf4j-jdk14.jar (for Java logging), slf4j-jcl.jar (if you’re using Commons logging) or logback-classic.jar (for logback logging). With the correct binding jar, SLF4J is able to interface between slf4j-api and underlying logging implementation.
+Underlying Logging Implementation – Here you provide the underlying logging library which will actually do the logging for your program. SLF4J will delegate logging calls to this library.
+
+Log4j2 configuration(documentation):
+https://logging.apache.org/log4j/log4j-2.3/manual/configuration.html#Loggers
+
+Log4j2 Configuration using xml:
+https://springframework.guru/log4j-2-configuration-using-xml/
+
+REMEMBER!!! log4j can't read YAML, if you decided to use configuration on YAML do the import:
+		<dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>2.8.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.8.6</version>
+        </dependency>
+
+All about appenders:
+https://logging.apache.org/log4j/log4j-2.0/manual/appenders.html
+
+      additivity: false - if one appender print something to console then another won't do that
