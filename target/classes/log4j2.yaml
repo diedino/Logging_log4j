@@ -44,6 +44,16 @@ Configutation:
             size: 100 KB
         DefaultRollOverStrategy:
           max: 100
+      - name: RollingFile_Appender_LogPack
+        fileName: ${log-path}/rollingfilelogpack.log
+        filePattern: "logs/archive/rollingfile.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
+        PatternLayout:
+          pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+        Policies:
+          SizeBasedTriggeringPolicy:
+            size: 100 KB
+        DefaultRollOverStrategy:
+          max: 100
 
 
 
@@ -69,3 +79,7 @@ Configutation:
       level: debug
       AppenderRef:
         - ref: Console_Appender
+    - name: loggingpackage
+      level: debug
+      AppenderRef:
+        - ref: RollingFile_Appender_LogPack
