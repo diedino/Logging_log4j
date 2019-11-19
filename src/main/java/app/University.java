@@ -10,7 +10,6 @@ public class University {
 
     public void doSomething(){
         logger.info("qwert from university");
-        logger.error("error from university");
         logger.error(MarkerManager.getMarker("FLOW"), "error with marker \"flow\" from university");
     }
 }

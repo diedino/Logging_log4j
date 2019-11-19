@@ -1,1 +1,18 @@
-[INFO ] 2019-11-19 13:08:48.513 [main] Student - qwert from app.Student
+[INFO ] 2019-11-19 15:50:21.297 [main] Student - qwert from app.Student
+[ERROR] 2019-11-19 15:50:21.298 [main] Student - error from Student
+[WARN ] 2019-11-19 15:50:21.312 [main] Student - key="value"
+[INFO ] 2019-11-19 15:52:34.440 [main] Student - qwert from app.Student
+[ERROR] 2019-11-19 15:52:34.440 [main] Student - error from Student
+[WARN ] 2019-11-19 15:52:34.441 [main] Student - key="value"
+[INFO ] 2019-11-19 15:53:00.582 [main] Student - qwert from app.Student
+[ERROR] 2019-11-19 15:53:00.583 [main] Student - error from Student
+[WARN ] 2019-11-19 15:53:00.587 [main] Student - key="value"
+[INFO ] 2019-11-19 15:53:18.531 [main] Student - qwert from app.Student
+[ERROR] 2019-11-19 15:53:18.532 [main] Student - error from Student
+[WARN ] 2019-11-19 15:53:18.535 [main] Student - key="value"
+[INFO ] 2019-11-19 15:55:00.050 [main] Student - qwert from app.Student
+[ERROR] 2019-11-19 15:55:00.051 [main] Student - error from Student
+[WARN ] 2019-11-19 15:55:00.054 [main] Student - key="value"
+[INFO ] 2019-11-19 15:55:56.963 [main] Student - qwert from app.Student
+[ERROR] 2019-11-19 15:55:56.963 [main] Student - error from Student
+[WARN ] 2019-11-19 15:55:56.965 [main] Student - key="value"

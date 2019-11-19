@@ -10,6 +10,11 @@ Configutation:
     Console:
       name: Console_Appender
       target: SYSTEM_OUT
+#BurstFilter
+      BurstFilter:
+        level: "INFO"
+        rate: "3"
+        maxBurst: "3"
       PatternLayout:
         pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
 
@@ -64,10 +69,12 @@ Configutation:
             size: 100 KB
         DefaultRollOverStrategy:
           max: 100
+    MapAppender:
+      name: MapAppender
 
   Loggers:
     Root:
-      level: debug
+      level: info
       AppenderRef:
        - ref: Console_Appender
        - ref: RollingFile_Appender
@@ -82,6 +89,7 @@ Configutation:
       level: debug
       additivity: false
       AppenderRef:
+        - ref: MapAppender
         - ref: Console_Appender
         - ref: RollingFile_Appender_University
 #    - name: app.Main

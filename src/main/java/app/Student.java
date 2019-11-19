@@ -16,10 +16,6 @@ public class Student {
 
     public void doMapMes() {
         mapMessage.put("key", "value");
-        mapMessage.put("key1", "value1");
-        mapMessage.put("key2", "value2");
-        mapMessage.put("key3", "value3");
-
         logger.warn(mapMessage);
     }
 
