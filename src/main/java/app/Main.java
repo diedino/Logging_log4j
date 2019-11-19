@@ -17,6 +17,7 @@ public class Main {
         University university = new University();
         //for (int i=0; i<1000; i++) {
             student.doSomething();
+            student.doMapMes();
             university.doSomething();
       //  }
         LogPack1 logPack1 = new LogPack1();

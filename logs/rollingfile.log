@@ -1,36 +1,4 @@
-[WARN ] 2019-11-19 11:06:40.018 [main] Main - main warn
-[ERROR] 2019-11-19 11:06:40.021 [main] Main - main error
-[ERROR] 2019-11-19 11:06:40.022 [main] Main - error from main
-[INFO ] 2019-11-19 11:06:40.022 [main] Student - qwert from app.Student
-[ERROR] 2019-11-19 11:06:40.023 [main] Student - error from Student
-[INFO ] 2019-11-19 11:06:40.024 [main] University - qwert from university
-[ERROR] 2019-11-19 11:06:40.024 [main] University - error from university
-[WARN ] 2019-11-19 11:06:40.026 [main] LogPack1 - warn from LogPack1
-[WARN ] 2019-11-19 11:06:40.027 [main] LogPack2 - warn from LogPack2
-[WARN ] 2019-11-19 11:06:40.028 [main] Main - one = 1
-[WARN ] 2019-11-19 11:06:59.071 [main] Main - main warn
-[ERROR] 2019-11-19 11:06:59.075 [main] Main - main error
-[ERROR] 2019-11-19 11:06:59.076 [main] Main - error from main
-[INFO ] 2019-11-19 11:06:59.077 [main] Student - qwert from app.Student
-[ERROR] 2019-11-19 11:06:59.078 [main] Student - error from Student
-[WARN ] 2019-11-19 11:06:59.080 [main] LogPack1 - warn from LogPack1
-[WARN ] 2019-11-19 11:06:59.080 [main] LogPack2 - warn from LogPack2
-[WARN ] 2019-11-19 11:06:59.081 [main] Main - one = 1
-[WARN ] 2019-11-19 11:07:21.548 [main] Main - main warn
-[ERROR] 2019-11-19 11:07:21.551 [main] Main - main error
-[ERROR] 2019-11-19 11:07:21.552 [main] Main - error from main
-[INFO ] 2019-11-19 11:07:21.552 [main] Student - qwert from app.Student
-[ERROR] 2019-11-19 11:07:21.554 [main] Student - error from Student
-[WARN ] 2019-11-19 11:07:21.564 [main] LogPack1 - warn from LogPack1
-[WARN ] 2019-11-19 11:07:21.565 [main] LogPack2 - warn from LogPack2
-[WARN ] 2019-11-19 11:07:21.569 [main] Main - one = 1
-[WARN ] 2019-11-19 11:07:44.279 [main] Main - main warn
-[ERROR] 2019-11-19 11:07:44.281 [main] Main - main error
-[ERROR] 2019-11-19 11:07:44.281 [main] Main - error from main
-[INFO ] 2019-11-19 11:07:44.282 [main] Student - qwert from app.Student
-[ERROR] 2019-11-19 11:07:44.285 [main] Student - error from Student
-[WARN ] 2019-11-19 11:07:44.288 [main] Main - one = 1
-[WARN ] 2019-11-19 11:08:07.947 [main] Main - main warn
-[ERROR] 2019-11-19 11:08:07.949 [main] Main - main error
-[ERROR] 2019-11-19 11:08:07.949 [main] Main - error from main
-[WARN ] 2019-11-19 11:08:07.954 [main] Main - one = 1
+[WARN ] 2019-11-19 12:39:54.317 [main] Main - main warn
+[ERROR] 2019-11-19 12:39:54.321 [main] Main - main error
+[ERROR] 2019-11-19 12:39:54.322 [main] Main - error from main
+[WARN ] 2019-11-19 12:39:54.331 [main] Main - one = 1

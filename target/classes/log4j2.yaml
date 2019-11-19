@@ -35,6 +35,10 @@ Configutation:
         DefaultRollOverStrategy:
           max: 100
       - name: RollingFile_Appender_University
+        MarkerFilter:
+          marker: "FLOW"
+          onMatch: "ACCEPT"
+          onMismatch: "DENY"
         fileName: ${log-path}/rollingfileuniversity.log
         filePattern: "logs/archive/university.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
         PatternLayout:
@@ -55,12 +59,18 @@ Configutation:
         DefaultRollOverStrategy:
           max: 100
 
-
-
-
   Loggers:
     Root:
       level: debug
+      MapFilter:
+        onMatch: "ACCEPT"
+        onMismatch: "NEUTRAL"
+        operapor: "or"
+        KeyValuePair:
+        - key: "key"
+          value: "value"
+        - key: "key3"
+          value: "value3"
       AppenderRef:
        - ref: Console_Appender
        - ref: RollingFile_Appender
@@ -77,10 +87,10 @@ Configutation:
       AppenderRef:
         - ref: Console_Appender
         - ref: RollingFile_Appender_University
-    - name: app.Main
-      level: debug
-      AppenderRef:
-        - ref: Console_Appender
+#    - name: app.Main
+#      level: debug
+#      AppenderRef:
+#        - ref: RollingFile_Appender
 #logging for package
     - name: loggingpackage
       level: debug
