@@ -1,4 +1,4 @@
-[WARN ] 2019-11-19 12:39:54.317 [main] Main - main warn
-[ERROR] 2019-11-19 12:39:54.321 [main] Main - main error
-[ERROR] 2019-11-19 12:39:54.322 [main] Main - error from main
-[WARN ] 2019-11-19 12:39:54.331 [main] Main - one = 1
+[WARN ] 2019-11-19 13:08:48.510 [main] Main - main warn
+[ERROR] 2019-11-19 13:08:48.512 [main] Main - main error
+[ERROR] 2019-11-19 13:08:48.512 [main] Main - error from main
+[WARN ] 2019-11-19 13:08:48.521 [main] Main - one = 1

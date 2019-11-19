@@ -25,6 +25,11 @@ Configutation:
         DefaultRollOverStrategy:
           max: 100
       - name: RollingFile_Appender_Student
+#regex filter
+        RegexFilter:
+          regex: "qwert .*"
+          onMatch: "ACCEPT"
+          onMismatch: "DENY"
         fileName: ${log-path}/rollingfilestudent.log
         filePattern: "logs/archive/student.log.%d{yyyy-MM-dd-hh-mm}-%i.gz"
         PatternLayout:
@@ -35,6 +40,7 @@ Configutation:
         DefaultRollOverStrategy:
           max: 100
       - name: RollingFile_Appender_University
+#marker filter
         MarkerFilter:
           marker: "FLOW"
           onMatch: "ACCEPT"
@@ -62,15 +68,6 @@ Configutation:
   Loggers:
     Root:
       level: debug
-      MapFilter:
-        onMatch: "ACCEPT"
-        onMismatch: "NEUTRAL"
-        operapor: "or"
-        KeyValuePair:
-        - key: "key"
-          value: "value"
-        - key: "key3"
-          value: "value3"
       AppenderRef:
        - ref: Console_Appender
        - ref: RollingFile_Appender
